@@ -1,0 +1,247 @@
+/* ===========================
+   Global Styles
+   =========================== */
+body {
+  font-family: Arial, sans-serif;   /* Clean, readable font */
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;              /* Light background for dashboard */
+  color: #333;                      /* Neutral text color */
+}
+
+header {
+  background: #0077b6;              /* Blue theme header */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+/* ===========================
+   AQI Card
+   =========================== */
+.aqi-card {
+  margin: 20px auto;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+}
+
+.aqi-card.poor {
+  background: #d00000;              /* Red for hazardous AQI */
+}
+
+/* ===========================
+   Pollutants Section
+   =========================== */
+.pollutants {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.pollutant {
+  background: #90e0ef;              /* Light blue pollutant cards */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ===========================
+   Trend Bars
+   =========================== */
+.trend {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bar {
+  width: 30px;
+  margin: 0 5px;
+  background: #0077b6;              /* Blue bars */
+  border-radius: 4px;
+}
+
+.bar1 { height: 40px; }
+.bar2 { height: 60px; }
+.bar3 { height: 80px; }
+.bar4 { height: 50px; }
+.bar5 { height: 70px; }
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #0077b6;              /* Blue theme buttons */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #023e8a;              /* Darker blue on hover */
+}
+
+/* ===========================
+   Weather Section
+   =========================== */
+#weather {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #eef7ff;              /* Soft blue background */
+  width: 300px;
+}
+
+#weather label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#weather input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+#weather button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* ===========================
+   Pollutant Info Cards
+   =========================== */
+.pollutant-info {
+  margin: 15px 0;
+  padding: 10px;
+  background: #caf0f8;              /* Light cyan info cards */
+  border-radius: 6px;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===========================
+   Login & Registration Pages
+   =========================== */
+
+/* Theme background for login/register pages */
+.theme-bg {
+  background: linear-gradient(to right, #0077b6, #90e0ef); /* Blue gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centering the form section */
+.form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form box styling */
+.form-box {
+  width: 320px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffffcc;            /* Semi-transparent white card */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.form-box label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #023e8a;                   /* Dark blue labels */
+}
+
+.form-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.form-box button {
+  margin-top: 20px;
+  width: 100%;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #023e8a;              /* Darker blue hover */
+}
+
+/* ===========================
+   Video Section
+   =========================== */
+#videos {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background: #eef7ff;              /* Soft blue background */
+  border-radius: 8px;
+}
+
+#videos h2 {
+  text-align: center;
+  color: #023e8a;
+}
+
+#videos p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;                  /* Wraps videos neatly on smaller screens */
+  gap: 20px;
+}
+
+.video-container figure {
+  text-align: center;
+}
+
+.video-container figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIR QUALITY MONITORING SYSTEM</title>
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AIR QUALITY MONITORING SYSTEM</h1>
+  </header>
+
+  <!-- City Selector -->
+  <label for="city">Select City:</label>
+  <select id="city">
+    <option>Delhi</option>
+    <option>Mumbai</option>
+    <option>Bangalore</option>
+  </select>
+
+  <!-- AQI Card -->
+  <div id="aqi" class="aqi-card poor">
+    <h2>AQI: 500+</h2>
+    <p>Status: Hazardous</p>
+  </div>
+
+  <!-- Pollutants -->
+  <div class="pollutants">
+    <div class="pollutant">PM2.5: 30</div>
+    <div class="pollutant">PM10: 50</div>
+    <div class="pollutant">CO2: 400 ppm</div>
+    <div class="pollutant">O3: 20 ppb</div>
+  </div>
+
+  <!-- Trend Bars -->
+  <div class="trend">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+    <div class="bar bar4"></div>
+    <div class="bar bar5"></div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div style="text-align:center;">
+    <a href="#details" class="btn">View AQI Scale</a>
+    <a href="#particles" class="btn">Pollutants Info</a>
+    <a href="#india-data" class="btn">India AQI Data</a>
+    <a href="login.html" class="btn">User Login</a>
+    <a href="Register.html" class="btn">Register</a>
+  </div>
+
+  <!-- Weather Input Section -->
+  <section id="weather">
+    <h2>Weather Information</h2>
+    <form action="weather.html" method="get">
+      <label for="temperature">Temperature (°C):</label>
+      <input type="number" id="temperature" name="temperature" placeholder="Enter temperature">
+
+      <label for="humidity">Humidity (%):</label>
+      <input type="number" id="humidity" name="humidity" placeholder="Enter humidity">
+
+      <label for="wind">Wind Speed (km/h):</label>
+      <input type="number" id="wind" name="wind" placeholder="Enter wind speed">
+
+      <button type="submit" class="btn">Submit Weather</button>
+    </form>
+  </section>
+
+  <!-- Section: AQI Details -->
+  <section id="details">
+    <h2>Air Quality Index Scale</h2>
+    <ul>
+      <li><strong>0–50:</strong> Good – Minimal impact on health.</li>
+      <li><strong>51–100:</strong> Moderate – Acceptable, but some pollutants may affect sensitive groups.</li>
+      <li><strong>101–200:</strong> Poor – May cause breathing discomfort, especially for children and elderly.</li>
+      <li><strong>201+:</strong> Very Poor / Hazardous – Serious health risks for everyone.</li>
+    </ul>
+  </section>
+
+  <!-- Section: Harmful Particles -->
+  <section id="particles">
+    <h2>Types of Harmful Air Pollutants</h2>
+    <div class="pollutant-info"><h3>PM2.5</h3><p>Tiny particles less than 2.5 microns.</p></div>
+    <div class="pollutant-info"><h3>PM10</h3><p>Dust and smoke particles up to 10 microns.</p></div>
+    <div class="pollutant-info"><h3>NOx</h3><p>Produced by vehicles and industry.</p></div>
+    <div class="pollutant-info"><h3>SO₂</h3><p>From burning coal and oil.</p></div>
+    <div class="pollutant-info"><h3>CO</h3><p>Colorless, odorless gas from combustion.</p></div>
+    <div class="pollutant-info"><h3>O₃</h3><p>Ground-level ozone forms smog.</p></div>
+  </section>
+
+  <!-- Section: India AQI Data -->
+  <section id="india-data">
+    <h2>India Air Quality Data (2025)</h2>
+    <p><strong>Delhi:</strong> PM2.5 = 101 µg/m³ (Severe)</p>
+    <p><strong>Hapur (UP):</strong> AQI = 416 (Severe)</p>
+    <p><strong>Noida & Ghaziabad:</strong> AQI ~ 397–396 (Very Poor)</p>
+    <p><strong>Ariyalur (TN):</strong> AQI = 13 (Good)</p>
+    <p><strong>447 districts:</strong> Breached national PM2.5 standards</p>
+  </section>
+
+  <!-- Section: AQI Data/Images -->
+  <section id="aqi-images">
+    <h2>Related Image</h2>
+  <figure>
+    <img src="/Files/aqi.jpg" alt="Air Pollution & Your Heart" width="1430px" height="auto">
+    <figcaption>Air Pollution & Your Heart</figcaption>
+  </figure>
+
+  <!-- Section: Educational Videos -->
+   <section id="videos">
+  <h2>Learn More About Air Quality</h2>
+  <p>Here are some useful videos explaining air pollution, AQI, and its impact on health:</p>
+
+  <div class="video-container">
+    <figure>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/4BZuWrdC-0s" title="Air Pollution 101 | National Geographic" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Air Pollution 101 | National Geographic</figcaption>
+    </figure>
+
+    <figure>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/uxs3Jz4X0ZI" title="Climate Change, Particulate Pollution, and Air Quality" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Climate Change, Particulate Pollution, and Air Quality</figcaption>
+    </figure>
+
+    <figure>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/0Puv0Pss33M" title="Air Quality Explained | NWS" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Air Quality Explained | NWS</figcaption>
+    </figure>
+
+    <figure>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/3z2R5y3iZfY" title="Causes and Effects of Climate Change | National Geographic" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Causes and Effects of Climate Change</figcaption>
+    </figure>
+
+    <figure>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/6Y8pI9R0p0o" title="Air Pollution Solutions" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Air Pollution Solutions</figcaption>
+    </figure>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Demo project</p>
+  </footer>
+</body>
+</html>
